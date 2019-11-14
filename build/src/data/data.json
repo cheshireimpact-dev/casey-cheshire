@@ -1,40 +1,9 @@
 [
   {
-    "works": [
-      {
-        "img" : "assets/img/how-wellfi-workks-graphic-labtop.png",
-        "number" : "photos one alt text",
-        "heading" : "hi"
-      },
-      {
-        "img" : "assets/img/how-wellfi-workks-graphic-labtop.png",
-        "number" : "photos one alt text",
-        "heading" : "hi"
-      },
-      {
-        "img" : "assets/img/how-wellfi-workks-graphic-labtop.png",
-        "number" : "photos one alt text",
-        "heading" : "hi"
-      }
+    "data_name": [
+      {                
+        "heading" : ""
+      }  
     ]
-  },
-  {
-    "helps": [
-      {
-        "img" : "assets/img/how-wellfi-workks-graphic-labtop.png",
-        "number" : "photos one alt text",
-        "heading" : "hi"
-      },
-      {
-        "img" : "assets/img/how-wellfi-workks-graphic-labtop.png",
-        "number" : "photos one alt text",
-        "heading" : "hi"
-      },
-      {
-        "img" : "assets/img/how-wellfi-workks-graphic-labtop.png",
-        "number" : "photos one alt text",
-        "heading" : "hi"
-      }
-    ]
-  }
+  }  
 ]
