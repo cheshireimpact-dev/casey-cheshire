@@ -1,0 +1,26 @@
+@charset 'utf-8';
+// vendors
+
+@import "global/_variables.scss";
+@import "https://use.fontawesome.com/releases/v5.2.0/css/all.css";
+// @import "vendors/bootstrap/_bootstrap.scss";
+// @import "vendors/mdb/_mdb.scss";
+
+// global
+@import "global/_mixins.scss";
+@import "global/_extends.scss";
+@import "global/_typography.scss";
+
+@import "global/_mixins.scss";
+@import "global/_extends.scss";
+@import "global/_global.scss";
+
+//pages
+@import "pages/_main.scss";
+@import "pages/_lp-1.scss"; // also based build for lp-2 - lp-5
+@import "pages/_lp-3.scss";
+@import "pages/_lp-4.scss";
+@import "pages/_lp-5.scss";
+
+//mediaqueries
+@import "global/_mediaqueries.scss";

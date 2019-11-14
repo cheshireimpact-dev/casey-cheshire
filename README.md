@@ -1,2 +1,0 @@
-# casey-cheshire
-dev-environment 

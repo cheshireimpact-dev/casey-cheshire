@@ -1,0 +1,31 @@
+// footer
+footer{
+	.container{
+		max-width:1340px;
+	}
+	background-color: $accent-colour-egglant;
+	diplay: inline-block;
+	color: $accent-colour-marine-grey;
+	text-align:left;
+	.logo{
+		max-width:_rem(100px);
+	}
+	.footer-social-media a{
+		font-size:_rem(20px);
+	}
+	.page-footer{
+		background:#130E21;
+	}
+
+}
+
+
+
+
+
+
+@media (max-width: 380px) { 
+    footer .sources{
+    	border-right:none;
+    }    
+}

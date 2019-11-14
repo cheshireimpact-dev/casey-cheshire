@@ -1,0 +1,94 @@
+//!//////////////
+// Boot Variables
+// -- These should be edited to best suit your theme. Please add your own variables here to make editing easier for other developers.
+
+//!///////////
+// Site Colors
+//!////////
+// Required
+//custom
+
+$color-off-black: #383942;
+$color-light-blue: #82c2df;
+$color-yellow: #B9BE10; 
+$color-green:#00b0ad;
+$color-red:#f45e4b;
+
+$color-blue:#223d95;
+$btn-color:#B9BD11;
+$main-colour: #898989;
+
+//base colors
+$color_black: #262223; // Black
+$color_white: #FFF; // White
+$color_grey:  #E7E7E7; // Grey
+
+$color_valid: #389AD9; // Valid Status
+$color_error: #C70016; // Error Status
+$color_warning: #F29C2A; // Warning Status
+
+$color_primary: #2BA9E1; // Primary color
+
+// Background
+$background_dark: $color_black; // Dark
+$background_light: $color_white; // Light
+
+// Text
+$text_dark: $color_black; // Dark
+$text_light: $color_white; // Light
+
+//!////////////
+// Site Spacers
+// -- Default margin,padding and other gutter sizes.
+
+$spacer_s: _rem(25px);  // Small
+$spacer_m: _rem(50px);  // Medium
+$spacer_l: _rem(150px); // Large
+
+//!///////////
+// Site Widths
+
+$width_min: _rem(400px); // Min width
+$width_max: _rem(1600px); // Max width
+
+//!///////////
+// Site Layout
+
+$layout_top: $spacer_s;
+$layout_bottom: $layout_top;
+$layout_left: $spacer_s;
+$layout_right: $layout_left;
+
+//!////////////////
+// Site Breakpoints
+// -- Default breakpoints used across the site.
+
+$breaks: (
+    'desktop_l': _rem(1800px), // Insane desktop
+    'desktop': _rem(1200px), // Default desktop
+    'tablet_l': _rem(900px), // Landscape
+    'tablet_p': _rem(600px), // Portait
+    'phone': _rem(599px)
+);
+
+//!///////////////////////
+// Site CSS3 Effect Config
+// -- Default settings for animations and transistions across the site.
+
+$transition_slow: 1.2s;
+$transition_normal: 0.3s;
+$transition_fast: 0.15s;
+
+$animation_slow: 1.2s;
+$animation_normal: 0.9s;
+$animation_fast: 0.6s;
+
+$easing: ease-in-out;
+
+
+@mixin box-shadow($top, $left, $blur, $space, $color)
+{
+    -webkit-box-shadow: $top $left $blur $space $color;
+       -moz-box-shadow: $top $left $blur $space $color;
+            box-shadow: $top $left $blur $space $color;
+}

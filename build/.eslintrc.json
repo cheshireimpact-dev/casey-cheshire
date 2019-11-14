@@ -1,0 +1,30 @@
+{  
+  // "extends": "recommended",
+  // "installedESLint": false,
+  "plugins": [
+    "standard",
+    "promise"
+  ],
+  "env": {    
+    "node": true,    
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "jquery": true
+  },
+  "rules": {
+    "semi": ["warn", "always"],
+    "comma-dangle": ["warn", "always-multiline"],
+    "space-before-function-paren": ["warn", "never"],
+    "indent": [0, "tab"],
+    "no-tabs": 0,
+    "padded-blocks" : ["error", { "blocks": "never" }],
+    "no-trailing-spaces": [0, { "skipBlankLines": true }],
+    "spaced-comment": ["warn", "always", {
+      "exceptions": ["-"]
+    }]
+  },
+  "parserOptions": {
+        "sourceType": "module"
+  }
+}

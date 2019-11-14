@@ -1,0 +1,88 @@
+//$radius:10px;
+@mixin border-radius($radius) {
+    -moz-border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+//width height
+@mixin size($width, $height, $maxwidth) {
+    width: $width;
+    max-width: $maxwidth;
+    height: $height;
+}
+
+//debugging borders
+@mixin debug($border-color) {
+    border: 1px solid $border-color;
+}
+
+@mixin blurfilter($pixel-blur) {
+    -webkit-filter: blur($pixel-blur);
+    filter: blur($pixel-blur);
+    transition: 1s filter linear;
+    -webkit-transition: 1s -webkit-filter linear;
+    -moz-transition: 1s -moz-filter linear;
+    -ms-transition: 1s -ms-filter linear;
+    -o-transition: 1s -o-filter linear;
+}
+
+@mixin mainHeadingH1 {
+    position: relative;
+    top: 50%;
+    margin: 0 auto;
+    font-size: 5em;
+    width: 100%;
+    text-align: center;
+    font-size: 5em;
+}
+
+@mixin push--auto {
+    margin: {
+        left: auto;
+        right: auto;
+    };
+}
+
+@function _rem($px, $base: 16px) {
+    // Converts a pixel value into a rem value.
+    // $px - unit - required - The pixel value to be converted to rem.
+    // $base - unit - optional - The base pixel size that 1rem is equivalent too.
+    @return $px / $base * 1rem;
+}
+// logo
+@mixin wellfi-logo($file, $width, $height) {
+    display: block;
+    background: url($file) no-repeat;
+    width: $width;
+    height: $height;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+// @debug _rem(11px);
+@mixin iconColour($colour) {
+    .icons {
+        path, polygon, g {
+            stroke: $colour;
+        }
+
+        .shape-pad-lock, .shape-money-exchange {
+            // fill:$colour;
+       
+        }
+
+        .stats {
+            // fill:$colour;
+       
+        }
+    }
+}
+
+//font
+@mixin fontSetting($fontfamily, $fontweight, $fontsize) {
+    font-family: $fontfamily;
+    font-weight: $fontweight;
+    font-size: _rem($fontsize);
+}

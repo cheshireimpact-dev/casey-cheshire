@@ -1,0 +1,44 @@
+// font go here
+@import url('https://fonts.googleapis.com/css?family=Asap:400,400i,500,500i,600,600i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+
+//!//////////
+// Site Fonts
+
+// Font Weights
+
+$font_light: 400;
+$font_normal: 400;
+$font_medium: 700;
+$font_bold: 700;
+
+// Font Sizes
+
+$fs_xs: _rem(10px); // Extra Small
+$fs_s: _rem(12px); // Small
+$fs_n: _rem(18px); // Normal
+$fs_m: _rem(23px); // Medium
+$fs_l: _rem(48px); // Large
+
+// Line Heights
+
+$title_lh: _rem(40px); // Line height used in h1-h6
+$content_lh: 2; // Line height used in the content areas
+
+// Letter Spacing
+
+$title_ls: normal;
+$content_ls: 0.01ch;
+
+//font-family: 'Montserrat', sans-serif;
+//font-family: 'Roboto', sans-serif;
+$font-one:'Roboto', sans-serif;
+
+$font-two:arial,helvetica,sans-serif;
+
+$asap-regular:600;
+$asap-medium:600;
+$asap-bold:700;
+$font-two:600;

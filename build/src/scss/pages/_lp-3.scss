@@ -1,0 +1,25 @@
+.layout-main.lp-3 {
+  header {
+    &.hero {
+      background: none;
+
+      &:before {
+        background: none;
+      }
+
+      .hero-content {
+        z-index: 999999;
+      }
+    }
+  }
+
+
+  .companies {
+    h2 {
+      font-size: _rem(40px);
+      line-height: _rem(40px);
+      font-weight: 300;
+      color: #898989;
+    }
+  }
+}
