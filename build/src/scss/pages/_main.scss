@@ -263,6 +263,9 @@ footer{
 	.social-link li a{
 	    @include fontSetting($font-one, 400, 38px, 24px);            
 	    margin:0 _rem(10px);
+	    &:hover{
+	    	color:#94d5f0;
+	    }
 	}
 	.copy-right{
 		@include fontSetting($font-one, 100, 12px, 24px);            
