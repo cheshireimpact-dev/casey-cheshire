@@ -1,0 +1,272 @@
+//    ________      __          __
+//   / ____/ /___  / /_  ____ _/ /
+//  / / __/ / __ \/ __ \/ __ `/ /
+// / /_/ / / /_/ / /_/ / /_/ / /
+// \____/_/\____/_.___/\__,_/_/
+* {
+    // border:1px solid red;
+    font-family: $font-one;
+    -webkit-transition: all $animation_fast $easing;
+    -moz-transition: all $animation_fast $easing;
+    -ms-transition: all $animation_fast $easing;
+    -o-transition: all $animation_fast $easing;
+    transition: all $animation_fast $easing;
+}
+
+body {
+    // font-size: ;
+}
+
+nav li a {
+    @include fontSetting($font-one, 400, 18px, 36px);
+    text-transform: uppercase;
+
+}
+
+h1 {
+    text-shadow: 2px 2px rgba(#000, .2);
+    text-transform: uppercase;
+}
+
+section {
+    display: block;
+}
+
+
+
+header {
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.0), 0 2px 10px 0 rgba(0, 0, 0, 0.0);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.0), 0 2px 10px 0 rgba(0, 0, 0, 0.0);
+    background-color: rgba(255, 255, 255, 0);
+
+}
+
+header.clear-header {
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    background-color: rgba(255, 255, 255, 1);
+}
+
+section p a {
+    color: #ffba00;
+
+    &:hover {
+        color: #94d5f0;
+    }
+
+}
+
+p, 
+ul li {
+    @include fontSetting($font-one, 400, 18px, 24px);
+}
+
+section .content-block ul {
+    margin-top: 0;
+    margin-bottom: 2em;
+    list-style: none;
+}
+
+section .content-block li:before {
+    content: "";
+    border-color: transparent #94d5f0;
+    border-style: solid;
+    border-width: .25em 0 .25em .45em;
+    transform: rotate(-90deg);
+    display: block;
+    height: 0;
+    width: 0;
+    left: -1em;
+    top: 0.9em;
+    position: relative;
+}
+
+#navbar a {
+    &:hover {
+        color: #ffba00;
+    }
+
+}
+.MuiInput-underline:after {
+    transition: none;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: #7cb2ca;
+    background: transparent;
+}
+
+.navbar {
+    position: relative;
+    padding: .5rem _rem(12px);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0), 0 2px 10px 0 rgba(0, 0, 0, 0);
+
+}
+
+
+
+.remove-bottom-margin {
+    margin-bottom: 0;
+}
+
+.remove-top-margin {
+    margin-top: 0;
+}
+
+
+.logo {
+    background-image: url(../assets/img/logo-cc.png);
+    background-repeat: no-repeat;
+    width: 167px;
+    height: 90px;
+    display: block;    
+
+}
+header .logo {    
+    background-size: 140px;    
+    background-position: 0 10px;
+}
+
+//    ________      __          __   ___                   __
+//   / ____/ /___  / /_  ____ _/ /  /   |  _____________  / /______
+//  / / __/ / __ \/ __ \/ __ `/ /  / /| | / ___/ ___/ _ \/ __/ ___/
+// / /_/ / / /_/ / /_/ / /_/ / /  / ___ |(__  |__  )  __/ /_(__  )
+// \____/_/\____/_.___/\__,_/_/  /_/  |_/____/____/\___/\__/____/
+
+.blue-bot {
+    border-bottom: 10px solid #94d5f0;
+    @include sectionShadow();
+}
+
+
+// button
+.btn-org {
+    @include fontSetting($font-one, 500, 28px, 32px);
+    text-transform: uppercase;
+    display: inline-block;
+    color: #ffffff;
+    padding: 15px 25px;
+    background: #ffba00;
+    webkit-box-shadow: 4px 4px 0px 0px rgba(233, 141, 8, 1);
+    -moz-box-shadow: 4px 4px 0px 0px rgba(233, 141, 8, 1);
+    box-shadow: 4px 4px 0px 0px rgba(233, 141, 8, 1);
+
+    &:hover {
+        color: #fff;
+        webkit-box-shadow: 0px 0px 0px 0px rgba(233, 141, 8, .1);
+        -moz-box-shadow: 0px 0px 0px 0px rgba(233, 141, 8, .1);
+        box-shadow: 0px 0px 0px 0px rgba(233, 141, 8, .1);
+    }
+}
+
+
+.bubble {
+    width: 100%;
+    margin: 0px 0 50px;
+    padding: 20px;
+    text-align: left;    
+    color: $color-body-font-dark;
+    position: relative;
+    p{
+    	@include fontSetting($font-one, 400, 22px, 28px);            
+    }
+}
+
+/* speech bubble blue */
+.blue-sb {
+    background: #ccebf8;
+}
+
+.blue-sb:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid #ccebf8;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #ccebf8;
+    border-bottom: 10px solid transparent;
+    left: 40px;
+    bottom: -20px;
+}
+
+.blue-sb:after {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid #ccebf8;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #ccebf8;
+    border-bottom: 10px solid transparent;
+    left: 40px;
+    bottom: -20px;
+}
+
+
+
+/* speech bubble org */
+.org-sb {
+    background: #ffcf4c;
+}
+
+.org-sb:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid #ffcf4c;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #ffcf4c;
+    border-bottom: 10px solid transparent;
+    left: 40px;
+    bottom: -20px;
+}
+
+.org-sb:after {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid #ffcf4c;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #ffcf4c;
+    border-bottom: 10px solid transparent;
+    left: 40px;
+    bottom: -20px;
+}
+
+
+
+
+
+
+//     ____            __
+//    / __/___  ____  / /____  _____
+//   / /_/ __ \/ __ \/ __/ _ \/ ___/
+//  / __/ /_/ / /_/ / /_/  __/ /
+// /_/  \____/\____/\__/\___/_/
+footer{
+	@include fontSetting($font-one, 500, 22px, 34px);            
+	.logo {   
+	    background-size: 130px !important;    
+	    background-position: top center;
+	}
+
+	.logo.footer {
+	    margin: 0 auto;
+	}
+	.newsletter-signup {
+	    background: #94d5f0;
+	}
+	.social-link li a{
+	    @include fontSetting($font-one, 400, 38px, 24px);            
+	    margin:0 _rem(10px);
+	}
+	.copy-right{
+		@include fontSetting($font-one, 100, 12px, 24px);            
+		margin:_rem(10px) auto _rem(100px);
+	}
+
+}

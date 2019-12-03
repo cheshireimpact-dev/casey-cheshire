@@ -81,8 +81,15 @@
 }
 
 //font
-@mixin fontSetting($fontfamily, $fontweight, $fontsize) {
+@mixin fontSetting($fontfamily, $fontweight, $fontsize, $lineheight) {
     font-family: $fontfamily;
     font-weight: $fontweight;
     font-size: _rem($fontsize);
+    line-height: _rem($lineheight);
 }
+
+// custom box shadow
+@mixin sectionShadow() {
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0,.3), 0 0px 0px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0,.3), 0 0px 0px 0 rgba(0, 0, 0, 0.2);
+}  

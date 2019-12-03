@@ -1,71 +1,322 @@
 /* Smartphones (landscape) ----------- */
 @media only screen and (min-width : 768px) {
-    .login-link{
-        border-left:none;
-    }
-    .about .hero,
-    .contact .hero,
-    .legal .hero{
-        margin-top:0em !important;
-    }
+  .login-link {
+    border-left: none;
+  }
+
+  .about .hero,
+  .contact .hero,
+  .legal .hero {
+    margin-top: 0em !important;
+  }
 }
 
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width : 320px) {
-    h2{
-        font-size:_rem(28px);
-    }    
+  h2 {
+    font-size: _rem(28px);
+  }
 }
 
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width : 576px) {
-	h2{
-		font-size:_rem(28px);
-	}
-    .layout-main header h1{
-        font-size: _rem(35px);                
-        line-height: _rem(40px);                
-    }
-    .form-wrapper{
-        background: #F8F8F8;
-    }   
-    .center-element{
-        float:none;
-        margin:0 auto;
-        width:100%;
-        text-align:center;
-    }
+  h2 {
+    font-size: _rem(28px);
+  }
+
+  .layout-main header h1 {
+    font-size: _rem(35px);
+    line-height: _rem(40px);
+  }
+
+  .form-wrapper {
+    background: #F8F8F8;
+  }
+
+  .center-element {
+    float: none;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+  }
 }
 
 
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {  
-    
-}
- 
+@media (min-width: 576px) {}
+
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@media (min-width: 768px) {  
-    .container{
-        // max-width: 820px;
+@media (min-width: 768px) {
+  .container {
+    // max-width: 820px;
+  }
+
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 990px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .container {
+    max-width:960px;
+  }
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1340px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 522px) {
+
+  
+//home
+  .section-home {
+    .content-block {
+        padding: 250px 0 0;
+        h1 {
+          @include fontSetting($font-one, 500, 48px, 46px);
+        }
+      }
+  }
+//speaker
+  .section-one {
+    .bottom-btn {
+      position: relative;
+      margin: 370px auto 0;
+      display: inline-block;
     }
 
- 
-}
- 
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
-    .container{
-        // max-width:960px;
+    .content-block {
+      padding: 30px 0 50px;
+      h1 {
+        @include fontSetting($font-one, 500, 36px, 42px);
+      }
     }
- 
+  }
+//coach
+  .section-two {    
+    .content-block {
+      padding: 30px 0 50px;
+      h1 {
+        @include fontSetting($font-one, 500, 42px, 46px);
+      }
+    }
+  }
+//book
+  .section-three  {    
+    h1 {
+        @include fontSetting($font-one, 500, 42px, 46px);
+      }
+  }
+//work with me
+  .section-four {
+    h1 {
+            @include fontSetting($font-one, 500, 42px, 46px);
+          }
+  }
 }
- 
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
-    .container{
-        // max-width: 1340px;
-    } 
+
+
+
+
+
+// 1024
+@media (max-width: 1024px) {
+
+  p,
+  ul li {
+    @include fontSetting($font-one, 400, 16px, 21px);
+  }
+
+  section .content-block ul {
+
+    margin-bottom: .4em;
+
+  }
+  .bubble {      
+      p{
+        @include fontSetting($font-one, 400, 18px, 24px);            
+      }
+  }
+  .btn-org {
+    @include fontSetting($font-one, 500, 22px, 28px);
+    text-transform: uppercase;
+    display: inline-block;
+    color: #ffffff;
+    padding: 12px 20px;
+
+  }
+//home
+  .section-home {
+    .content-block {
+        padding: 250px 0 0;
+        h1 {
+          @include fontSetting($font-one, 500, 48px, 46px);
+        }
+      }
+  }
+//speaker
+  .section-one {
     
+    background-size: _rem(330px);
+        
+    .bottom-btn {
+      position: relative;
+      margin: 370px auto 0;
+      display: inline-block;
+    }
+
+    .content-block {
+      padding: 30px 0 50px;
+      h1 {
+        @include fontSetting($font-one, 500, 36px, 42px);
+      }
+    }
+  }
+//coach
+  .section-two {    
+    .content-block {
+      padding: 30px 0 50px;
+      h1 {
+        @include fontSetting($font-one, 500, 42px, 46px);
+      }
+    }
+  }
+//book
+  .section-three  {    
+    h1 {
+        @include fontSetting($font-one, 500, 42px, 46px);
+      }
+  }
+//work with me
+  .section-four {
+    h1 {
+            @include fontSetting($font-one, 500, 42px, 46px);
+          }
+  }
 }
+
+
+// 992
+@media (max-width: 992px) {  
+  .container {
+    max-width:960px;
+  }  
+  .navbar-collapse {    
+    background: #fff;
+}
+  //speaker
+    .section-one {    
+      background-size: _rem(230px);                    
+      .bottom-btn  {              
+              margin: 0 auto 0;              
+          }
+    }
+
+}
+
+
+
+
+
+
+// 659
+@media (max-width: 659px) {  
+  .container {
+    max-width:960px;
+  }
+  .section-one .bottom-btn {
+      margin: 0 auto;
+      margin-bottom:2em;
+  }  
+  
+  .section-one,
+  .section-two,
+  .section-home {      
+      height: auto;
+  }
+ 
+
+}
+
+
+
+
+
+
+// 609
+@media (max-width: 660px) {  
+  .container {
+    max-width:960px;
+  }  
+  .btn-org{
+    margin-top:1em;
+    margin-bottom:2em;
+  }
+  //speaker
+    .section-one {    
+      background:none;                    
+      .content-block {
+          padding: 30px 0 1em;
+      }
+     
+    }
+
+    .section-three h1 {
+        padding: 2em 0 20px;     
+    }
+    .section-four h1 {
+        padding: 2em 0 20px;     
+    }
+}
+
+
+
+
+
+
+// 525
+@media (max-width: 525px) {  
+  .container {
+    max-width:960px;
+  }  
+  h1 {              
+          white-space: normal !important;       
+      }
+}
+
+
+
+
+
+
+// 340
+@media (max-width: 340px) {  
+  .btn-org{
+    @include fontSetting($font-one, 500, 18px, 36px);
+  }
+}
+
+
+
+
 

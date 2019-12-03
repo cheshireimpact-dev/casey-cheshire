@@ -1,0 +1,163 @@
+//     __
+//    / /_  ____  ____ ___  ___
+//   / __ \/ __ \/ __ `__ \/ _ \
+//  / / / / /_/ / / / / / /  __/
+// /_/ /_/\____/_/ /_/ /_/\___/
+// -----------------------------
+.section-home {
+    background: url(../assets/img/home-bg.jpg) no-repeat;
+    background-position: cover;
+    margin-top: -106px;
+    height: 100vh;
+    positionr:relaive;
+    .content-block {
+        color: #fff;
+        padding: 20em 0 0;
+        display: block;        
+        h1 {
+            @include fontSetting($font-one, 500, 58px, 66px);
+                white-space: nowrap;
+        }
+
+        p {
+            @include fontSetting($font-one, 100, 24px, 30px);
+        }
+    }
+}
+
+//                           __
+//    _________  ___  ____ _/ /_____  _____
+//   / ___/ __ \/ _ \/ __ `/ //_/ _ \/ ___/
+//  (__  ) /_/ /  __/ /_/ / ,< /  __/ /
+// /____/ .___/\___/\__,_/_/|_|\___/_/
+//     /_/
+// -----------------------------------
+.section-one {
+    background: url(../assets/img/speaker-casey-cheshire.png) no-repeat right bottom;
+    background-size: _rem(530px);
+    height: calc(100vh - 106px);
+
+    .bottom-btn {
+        position: relative;
+        margin: 470px auto 0;
+        display: inline-block;
+    }
+
+    .content-block {
+        padding: 70px 0 50px;
+
+        h1 {
+            @include fontSetting($font-one, 500, 48px, 48px);
+            color: $color-body-font-dark;
+            text-shadow: none;
+        }
+    }
+}
+
+//                          __
+//   _________  ____ ______/ /_
+//  / ___/ __ \/ __ `/ ___/ __ \
+// / /__/ /_/ / /_/ / /__/ / / /
+// \___/\____/\__,_/\___/_/ /_/
+// -----------------------------
+
+.section-two {
+    background-image: url(../assets/img/coach-bg.jpg);
+    background-size: cover;
+    height: calc(100vh - 106px);
+
+    .content-block {
+        padding: 50px 0 0;
+        color: #fff;
+    }
+
+    h1 {
+        color: #fff;
+        @include fontSetting($font-one, 500, 53px, 66px);
+        white-space: nowrap;
+        padding: 0 0 20px 0;
+    }
+
+    .cta-box {
+        background-color: rgba(000, 000, 000, .5);
+        padding: 20px;
+        color: #fff;
+    }
+
+}
+
+//     ____              __
+//    / __ )____  ____  / /__
+//   / __  / __ \/ __ \/ //_/
+//  / /_/ / /_/ / /_/ / ,<
+// /_____/\____/\____/_/|_|
+// ---------------------------
+
+.section-three {
+    background-image: url(../assets/img/book-bg.png);
+    background-repeat:no-repeat;
+
+    h1 {
+        padding: 300px 0 20px;
+        text-shadow: none;
+        @include fontSetting($font-one, 500, 48px, 66px);
+        color: $color-body-font-dark;
+    }
+}
+
+.section-three-content {
+    color: $color-body-font-dark;
+
+    h2 {
+        @include fontSetting($font-one, 500, 28px, 34px);
+    }
+
+    .cta-box {
+        background-color: rgba(000, 000, 000, .6);
+        padding: 20px;
+    }
+
+    .praiser {
+        @include fontSetting($font-one, 400, 16px, 22px);
+    }
+}
+
+//  _       __           __      _       ___ __  __       __  ___
+// | |     / /___  _____/ /__   | |     / (_) /_/ /_     /  |/  /__
+// | | /| / / __ \/ ___/ //_/   | | /| / / / __/ __ \   / /|_/ / _ \
+// | |/ |/ / /_/ / /  / ,<      | |/ |/ / / /_/ / / /  / /  / /  __/
+// |__/|__/\____/_/  /_/|_|     |__/|__/_/\__/_/ /_/  /_/  /_/\___/
+// -----------------------------------------------------------------
+.section-four {
+    background-image: url(../assets/img/work-with-me-bg.jpg);
+	background-repeat:no-repeat;
+    h1 {
+        padding: 330px 0 20px;
+        font-size: 48px;
+        text-shadow: none;
+        color: #fff;
+    }
+
+    .navbar {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+}
+
+.section-four-content {
+    .content-block {
+        // padding: 120px 0 200px;
+        color: $color-body-font-dark;
+
+        h2 {
+            @include fontSetting($font-one, 500, 22px, 34px);            
+            margin-bottom:1em;
+            color: $color-body-font-dark;
+        }
+
+        .cta-box {
+            background-color: rgba(000, 000, 000, .6);
+            padding: 20px;
+        }
+    }
+}

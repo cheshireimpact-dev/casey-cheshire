@@ -1,10 +1,8 @@
 {% set local = true %}
 {% include "inc/globals/header.njk"%}
-<div class="container">
-  <div class="jumbotron">
-    <h1>Casey Cheshire</h1>
-    <p>hello everybody</p>    
-    <img src="https://i.imgur.com/VWjV2mW.gif" alt="">
-  </div>  
-</div>
+  {% include "inc/sections/home.njk"%}
+  {% include "inc/sections/speaker.njk"%}
+  {% include "inc/sections/coach.njk"%}
+  {% include "inc/sections/book.njk"%}
+  {% include "inc/sections/work-with-me.njk"%}
 {% include "inc/globals/footer.njk"%}

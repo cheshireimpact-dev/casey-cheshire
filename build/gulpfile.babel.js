@@ -292,7 +292,7 @@ gulp.task('styles:sass', () => (
   .pipe(isProd ? util.noop() : sourcemaps.write())
   .pipe(isProd && isMin ? cssnano(_pluginConfig.cssnano) : util.noop())
   .pipe(isProd && isMin ? rename(_pluginConfig.rename) : util.noop())
-  // .pipe(cssnano(_pluginConfig.cssnano))
+  .pipe(cssnano(_pluginConfig.cssnano))
   .pipe(sourcemaps.write())
   .pipe(gulp.dest(`${_paths.output}/css`))
   .pipe(isProd ? util.noop() : browserSync.stream())
