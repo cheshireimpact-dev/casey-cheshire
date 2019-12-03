@@ -68,11 +68,9 @@
         function fadeHeader() {
           $(window).scroll(function() {
             if ($(window).scrollTop() > 100) {
-              $('header').addClass('clear-header');
-              console.log('greater');
+              $('#header').addClass('clear-header');
             } else {
-              $('header').removeClass('clear-header');
-              console.log('lesser');
+              $('#header').removeClass('clear-header');
             }
           });
         };
