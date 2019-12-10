@@ -125,6 +125,9 @@
   }
 }
 
+
+
+
 //  _       __           __      _       ___ __  __       __  ___
 // | |     / /___  _____/ /__   | |     / (_) /_/ /_     /  |/  /__
 // | | /| / / __ \/ ___/ //_/   | | /| / / / __/ __ \   / /|_/ / _ \
@@ -165,3 +168,44 @@
     }
   }
 }
+
+
+
+//                      __                __
+//     ____  ____  ____/ /________ ______/ /_
+//    / __ \/ __ \/ __  / ___/ __ `/ ___/ __/
+//   / /_/ / /_/ / /_/ / /__/ /_/ (__  ) /_
+//  / .___/\____/\__,_/\___/\__,_/____/\__/
+// /_/
+// ---------------------------
+
+.section-five {
+  background-image: url(../assets/img/podcast.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  h1 {
+    padding: 300px 0 100px;
+    text-shadow: none;
+    @include fontSetting($font-one, 500, 48px, 66px);
+    color: $color-body-font-dark;
+  }
+}
+
+.section-five-content {
+  color: $color-body-font-dark;
+
+  h2 {
+    @include fontSetting($font-one, 500, 28px, 34px);
+  }
+
+  .cta-box {
+    background-color: rgba(000, 000, 000, .6);
+    padding: 20px;
+  }
+
+  .praiser {
+    @include fontSetting($font-one, 400, 16px, 22px);
+  }
+}
+

@@ -20,34 +20,11 @@
 </head>
 <body class="" data-spy="scroll" data-target="#header" data-offset="107">	
 	<header id="header" class="sticky-top">
-		<div class="container">	
-      <!-- // nav -->  
-			<nav id="navbar" class="navbar navbar-expand-lg ">
-			  <a class="home logo navbar-brand" href="#section-home"></a>
-			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			    <span class="navbar-toggler-icon"></span>
-			  </button>
-			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-			    <ul class="navbar-nav ml-auto nav-pills">
-			      <li class="nav-item">
-  			        <a class="offset nav-link" href="#section-one">Speaker</a>
-  			      </li>
-  			      <li class="nav-item">
-  			        <a class="offset nav-link" href="#section-two">Coach</a>
-  			      </li>
-  			      <li class="nav-item">
-  			        <a class="offset nav-link" href="#section-three">Book</a>
-  			      </li>
-  			      <li class="nav-item">
-  			        <a class="offset nav-link" href="#section-four">Work With Me</a>
-  			      </li>
-
-  			      <li class="nav-item">
-  			        <a class="offset nav-link" href="#connect-with-casey">Connect</a>
-  			      </li>
-			    </ul>			    
-			  </div>
-			</nav>	
-      <!-- // end nav -->  	
+		<div class="container">	    
+      {% if home %}
+        {% include "../sections/home-nav.njk"%}  
+      {% else %}
+        {% include "../sections/inner-nav.njk"%}  
+      {% endif %}      	
 		</div>		
 	</header><!-- /header -->	

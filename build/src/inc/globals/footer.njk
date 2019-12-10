@@ -8,15 +8,11 @@
 	          	<span>We need a little blurb to go right here</span>
 	          </p>
 	      	</div>      
-	       	<div class="col-sm-12 col-md-6 col-lg-6 pt-4">
-	          
-
-	          	<form action="http://go.cheshireimpact.com/l/15322/2019-12-06/pd273n" method="post">
-	          	
-	              <input type="text" name="email" />
-	              
-	          	<input type="submit" value="submit" required="required" />
-	          </form>
+	       	<div class="col-sm-12 col-md-6 col-lg-6 pt-4">	         
+	          	<form class="news-letter" action="http://go.cheshireimpact.com/l/15322/2019-12-06/pd273n" method="post">
+	              	<input class="col-8" type="text" name="email" />	              
+	          		<input class="col-4" type="submit" value="Subscribe" required="required" />
+	          	</form>
 	      	</div>      
 	    </div>  
 	  </div>
@@ -25,13 +21,18 @@
 	  <div class="container pt-5">
 	    <div class="row">
 	      <div class="col-12 text-center">
-	      	<a class="home logo footer " href="#section-home"></a>
+	      	{% if home %}
+	      	  <a class="home logo footer " href="#section-home"></a>
+	      	{% else %}
+	      	  <a class="home logo footer " href="index.html#section-home"></a>
+	      	{% endif %}      	
+	      	
 	      	<p>Connect with me</p>
 	      	<ul class="list-inline social-link">
-	      	    <li class="list-inline-item"><a href=""><i class="fab fa-facebook-f"></i></a></li>
-	      	    <li class="list-inline-item"><a href=""><i class="fab fa-twitter"></i></a></li>
-	      	    <li class="list-inline-item"><a href=""><i class="fab fa-linkedin-in"></i></a></li>
-	      	    <li class="list-inline-item"><a href=""><i class="fab fa-youtube"></i></a></li>
+	      	    <li class="list-inline-item"><a href="https://www.facebook.com/caseychesh" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+	      	    <li class="list-inline-item"><a href="https://twitter.com/CaseyChesh" target="_blank"><i class="fab fa-twitter"></i></a></li>
+	      	    <li class="list-inline-item"><a href="https://www.linkedin.com/in/caseycheshire" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+	      	    <li class="list-inline-item"><a href="https://www.youtube.com/user/caseychesh" target="_blank"><i class="fab fa-youtube"></i></a></li>
 	      	</ul>
 	      	<p class="copy-right">Copyright &copy; <span class="current-year"></span> Casey Cheshire. All Rights Reserved. | Privacy Policy</p>
 	      </div>
@@ -42,5 +43,20 @@
   <!-- scripts -->    
   <script src="js/vendors/vendors.js"></script>   
   <script src="js/main.js"></script>  
+  <script type="text/javascript">
+	  piAId = '16322';
+	  piCId = '111823';
+	  piHostname = 'pi.pardot.com';
+
+	  (function() {
+	  function async_load(){
+	  var s = document.createElement('script'); s.type = 'text/javascript';
+	  s.src = ('https:' == document.location.protocol ? 'https://pi' : 'http://cdn') + '.pardot.com/pd.js';
+	  var c = document.getElementsByTagName('script')[0]; c.parentNode.insertBefore(s, c);
+	  }
+	  if(window.attachEvent) { window.attachEvent('onload', async_load); }
+	  else { window.addEventListener('load', async_load, false); }
+	  })();
+  </script>
   </body>
 </html>

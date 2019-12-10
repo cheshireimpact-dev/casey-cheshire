@@ -47,10 +47,14 @@
       <li class="nav-item">
        <a class="offset nav-link" href="#connect-with-casey">Connect</a>
       </li>
+      <li class="nav-item">
+       <a class="offset nav-link" href="podcast.html">Podcast</a>
+      </li>
      </ul>
     </div>
    </nav>
    <!-- // end nav -->
+
   </div>
  </header>
  <!-- /header -->
@@ -219,6 +223,14 @@
       <p><a href="" target="_blank">The Cheshire Career Coach Experience (***needs link)</a> elevating the marketer to their fullest potential.</p>
       <p><a href="cheshireimpact.com" target="_blank">Cheshire Impact</a> maximizing your use of Salesforce Pardot through professional services and onsite training.</p>
       <p><a href="" target="_blank">RingMaster (***needs link)</a> producing and offering strategic podcast services to take your content to the next level.</p>
+      <br>
+      <form class="form" action="http://go.cheshireimpact.com/l/15322/2019-12-10/pd45m8" method="post">
+       <input name="name" type="text" placeholder="Name" required="required">
+       <input name="email" type="text" placeholder="Email address" required="required">
+       <input name="company" type="text" placeholder="Company">
+       <textarea name="message" rows="5" cols="50" placeholder="Message"></textarea>
+       <input class="btn-org" type="submit" value="submit" required="required" />
+      </form>
      </div>
     </div>
     <div class="col-sm-12 col-md-5">
@@ -241,13 +253,9 @@
       </p>
      </div>
      <div class="col-sm-12 col-md-6 col-lg-6 pt-4">
-
-
-      <form action="http://go.cheshireimpact.com/l/15322/2019-12-06/pd273n" method="post">
-
-       <input type="text" name="email" />
-
-       <input type="submit" value="submit" required="required" />
+      <form class="news-letter" action="http://go.cheshireimpact.com/l/15322/2019-12-06/pd273n" method="post">
+       <input class="col-8" type="text" name="email" />
+       <input class="col-4" type="submit" value="Subscribe" required="required" />
       </form>
      </div>
     </div>
@@ -258,15 +266,17 @@
     <div class="row">
      <div class="col-12 text-center">
       <a class="home logo footer " href="#section-home"></a>
+
+
       <p>Connect with me</p>
       <ul class="list-inline social-link">
-       <li class="list-inline-item"><a href=""><i class="fab fa-facebook-f"></i></a>
+       <li class="list-inline-item"><a href="https://www.facebook.com/caseychesh" target="_blank"><i class="fab fa-facebook-f"></i></a>
        </li>
-       <li class="list-inline-item"><a href=""><i class="fab fa-twitter"></i></a>
+       <li class="list-inline-item"><a href="https://twitter.com/CaseyChesh" target="_blank"><i class="fab fa-twitter"></i></a>
        </li>
-       <li class="list-inline-item"><a href=""><i class="fab fa-linkedin-in"></i></a>
+       <li class="list-inline-item"><a href="https://www.linkedin.com/in/caseycheshire" target="_blank"><i class="fab fa-linkedin-in"></i></a>
        </li>
-       <li class="list-inline-item"><a href=""><i class="fab fa-youtube"></i></a>
+       <li class="list-inline-item"><a href="https://www.youtube.com/user/caseychesh" target="_blank"><i class="fab fa-youtube"></i></a>
        </li>
       </ul>
       <p class="copy-right">Copyright &copy; <span class="current-year"></span> Casey Cheshire. All Rights Reserved. | Privacy Policy</p>
@@ -278,6 +288,21 @@
  <!-- scripts -->
  <script src="js/vendors/vendors.js"></script>
  <script src="js/main.js"></script>
+ <script type="text/javascript">
+  piAId = '16322';
+	  piCId = '111823';
+	  piHostname = 'pi.pardot.com';
+
+	  (function() {
+	  function async_load(){
+	  var s = document.createElement('script'); s.type = 'text/javascript';
+	  s.src = ('https:' == document.location.protocol ? 'https://pi' : 'http://cdn') + '.pardot.com/pd.js';
+	  var c = document.getElementsByTagName('script')[0]; c.parentNode.insertBefore(s, c);
+	  }
+	  if(window.attachEvent) { window.attachEvent('onload', async_load); }
+	  else { window.addEventListener('load', async_load, false); }
+	  })();
+ </script>
 </body>
 
 </html>

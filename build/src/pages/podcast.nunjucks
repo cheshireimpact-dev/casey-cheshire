@@ -1,0 +1,7 @@
+{% set local = true %}
+{% set home = false %}
+{% include "inc/globals/header.njk"%}	
+  	{% include "inc/sections/podcast.njk"%}
+  	<!-- // work-with me -->  	  	
+  	<!-- // footer -->  	
+{% include "inc/globals/footer.njk"%}
