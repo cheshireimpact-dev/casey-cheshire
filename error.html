@@ -61,7 +61,7 @@
 
  <section id="section-five" class="section-five">
  </section>
- <section class="section-five-content blue-bot">
+ <section class="section-five-content">
   <div class="container pt-5">
    <div class="row">
     <div class="col-sm-12 col-md-12 pr-5 text-center p5">
@@ -76,9 +76,9 @@
  </section>
  <!-- // work-with me -->
  <!-- // footer -->
- <footer>
 
-  <section id="connect-with-casey" class="newsletter-signup mt-5">
+ <footer>
+  <section id="connect-with-casey" class="newsletter-signup">
    <div class="container">
     <div class="row ">
      <div class="col-sm-12 col-md-6 col-lg-6 pt-4">
@@ -90,8 +90,8 @@
      </div>
      <div class="col-sm-12 col-md-6 col-lg-6 pt-4">
       <form class="news-letter" action="http://go.cheshireimpact.com/l/15322/2019-12-06/pd273n" method="post">
-       <input class="col-8" type="email_newsletter" name="email_news-letter" />
-       <input class="col-4" type="submit" value="Subscribe" required="required" />
+       <input class="col-8" type="text" name="email_newsletter" placeholder="Email Newsletter" required="required" />
+       <input class="col-4" type="submit" value="Subscribe" />
       </form>
      </div>
     </div>
@@ -115,12 +115,40 @@
        <li class="list-inline-item"><a href="https://www.youtube.com/user/caseychesh" target="_blank"><i class="fab fa-youtube"></i></a>
        </li>
       </ul>
-      <p class="copy-right">Copyright &copy; <span class="current-year"></span> Casey Cheshire. All Rights Reserved. | Privacy Policy</p>
+      <p class="copy-right">Copyright &copy; <span class="current-year"></span> Casey Cheshire. All Rights Reserved. | <a data-toggle="modal" data-target="#privacypolicy" href="#">Privacy Policy</a>
+      </p>
+      <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#basicExampleModal">
+  Launch demo modal
+</button> -->
      </div>
     </div>
    </div>
   </section>
  </footer>
+ <!-- // privacy policy modal -->
+ <!-- Modal -->
+ <div class="modal fade privacy-policy" id="privacypolicy" tabindex="-1" role="dialog" aria-labelledby="privacypolicy" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+   <div class="modal-content">
+    <div class="modal-header">
+     <h5 class="modal-title" id="exampleModalLabel">Privacy Policy Content:</h5>
+     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+     </button>
+    </div>
+    <div class="modal-body">
+     <p>This privacy notice discloses the privacy practices of caseycheshire.com. This website may use third party website analytic tools such as Salesforce Pardot that employ cookies to collect certain information concerning your use of this website. Caseycheshire.com
+      only has access to collect the information you voluntarily provide via email or through direct contact. Caseycheshire.com is the sole owner of the information collected on this site and it will not be sold or rented to any third-party organization.
+      The information collected concerning your use of this website is secured according to industry standards through password logins. If you would like to opt-out of cookies tracking your use of this website, please select “No.”</p>
+     <p>Cheshire Impact 1 Tara Blvd Suite 200 Nashua, NH 03062</p>
+    </div>
+    <div class="modal-footer">
+     <button type="button" class="btn btn-org" data-dismiss="modal">Close</button>
+    </div>
+   </div>
+  </div>
+ </div>
+ <!-- // privacy policy modal -->
  <!-- scripts -->
  <script src="js/vendors/vendors.js"></script>
  <script src="js/main.js"></script>

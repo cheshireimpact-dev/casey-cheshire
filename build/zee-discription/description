@@ -3,7 +3,7 @@ Casey Cheshire Site
 ------------------------------------------------------------------------------------------------------------------------
 Overview Documentation Link: 
 https://docs.google.com/document/d/1DSe9MQ2QRygXdV6saum3tPPb5N57ssuZQQqhQu8t2Xo/edit
-
+https://docs.google.com/document/u/1/d/1FMwj1d4Pz5oHInl7MFQz4DisUQCo9ODyVpE2mMGQtaI/edit?usp=sharing
 
 ------------------------------------------------------------------------------------------------------------------------
 subscribe hanlders
@@ -12,12 +12,23 @@ https://pi.pardot.com/formHandler/read/id/7671
 contact hanlders
 https://pi.pardot.com/formHandler/read/id/7675
 
-
-
-
-
 https://cheshireimpact-dev.github.io/casey-cheshire/error.html
 https://cheshireimpact-dev.github.io/casey-cheshire/thank-you.html
 
-
 ------------------------------------------------------------------------------------------------------------------------
+
+1:color black to purple dark
+2:transitions .25
+
+3:borderbreaker hardline - white space
+6:offset internal page jump
+8:cta box - padding-bottom: 25px;
+
+4:input - outline 0
+5:subscribe - text-shadow: 1px 1px 0px 
+7:privacy - modal
+9:SUBMIT - ONLY 24PX
+
+
+
+

@@ -209,3 +209,100 @@
   }
 }
 
+
+
+form.form{
+  text-align:center;
+  margin:0 auto 4em;
+  input[type="text"],
+  textarea{    
+    width:100%;
+    color:#99b7c5;
+    padding:1em;
+    border:1px solid #94d5f0;
+    margin:1em auto;
+  }
+  input:focus,
+  textarea:focus{
+    border:1px solid #383942;
+    color: #383942;
+    outline:0;
+  }
+  ::placeholder {
+      color: #99b7c5;
+    }
+  input[type=submit]{
+    text-align:center;
+    margin:.5em auto;
+    color: #383942;
+    outline:0; 
+    cursor: pointer;
+    @include fontSetting($font-one, 500, 24px, 32px);
+    text-transform: uppercase;
+    display: inline-block;
+    color: #ffffff;
+    padding: 15px 25px;
+    background: #ffba00;
+    webkit-box-shadow: 4px 4px 0px 0px rgba(233, 141, 8, 1);
+    -moz-box-shadow: 4px 4px 0px 0px rgba(233, 141, 8, 1);
+    box-shadow: 4px 4px 0px 0px rgba(233, 141, 8, 1);    
+    text-shadow:2px 1px 1px #ffa119; 
+    -webkit-transition: all $animation_fast $easing;
+    -moz-transition: all $animation_fast $easing;
+    -ms-transition: all $animation_fast $easing;
+    -o-transition: all $animation_fast $easing;
+    transition: all $animation_fast $easing;
+    border:none;
+    &:hover {
+        color: #fff;
+        webkit-box-shadow: 0px 0px 0px 0px rgba(233, 141, 8, .1);
+        -moz-box-shadow: 0px 0px 0px 0px rgba(233, 141, 8, .1);
+        box-shadow: 0px 0px 0px 0px rgba(233, 141, 8, .1);
+    }
+  } 
+}
+
+form.news-letter{   
+  color: #383942;       
+  input[type="text"]{            
+    color: #383942;    
+    padding: 0 15px !important;
+    border:none;
+    float:left;
+    outline:0 !important; 
+  }
+
+  input[type="text"]::placeholder {
+      color: #99b7c5;
+    }  
+  input[type=submit]{   
+    cursor: pointer;
+    float:right; 
+    text-align: center;    
+    @include fontSetting($font-one, 300, 18px, 22px);
+    text-transform: uppercase;
+    display: inline-block;
+    color: #ffffff;
+    padding: 6px 0;
+    border:none;
+    outline:0;
+    background: #ffba00;
+    outline:0;
+    text-shadow:1px 1px 0px #ffa119; 
+    -webkit-transition: all $animation_fast $easing;
+    -moz-transition: all $animation_fast $easing;
+    -ms-transition: all $animation_fast $easing;
+    -o-transition: all $animation_fast $easing;
+    transition: all $animation_fast $easing;
+    &:hover {
+        color: #fff;        
+    }
+
+  } 
+}
+
+
+.privacy-policy button[type="button"]{
+  @include fontSetting($font-one, 500, 18px, 32px);  
+  padding:10px 16px;
+}

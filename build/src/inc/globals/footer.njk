@@ -1,25 +1,23 @@
+
 <footer>	
-  	{% if subscribe %}	
-  	<section id="connect-with-casey" class="newsletter-signup mt-5">
-  	  <div class="container">    
-  	    <div class="row ">
-  	        <div class="col-sm-12 col-md-6 col-lg-6 pt-4">
-  	          <p>
-  	          	<strong>Stay in the know</strong><br>
-  	          	<span>We need a little blurb to go right here</span>
-  	          </p>
-  	      	</div>      
-  	       	<div class="col-sm-12 col-md-6 col-lg-6 pt-4">	         	         	
-  	          	<form class="news-letter" action="http://go.cheshireimpact.com/l/15322/2019-12-06/pd273n" method="post">
-  	              	<input class="col-8" type="email_newsletter" name="email_news-letter" />	              
-  	          		<input class="col-4" type="submit" value="Subscribe" required="required" />
-  	          	</form>
-  	      	</div>      
-  	    </div>  
-  	  </div>
-  	</section>  
-	{% else %}	  
-	{% endif %}
+	<section id="connect-with-casey" class="newsletter-signup">
+	  <div class="container">    
+	    <div class="row ">
+	        <div class="col-sm-12 col-md-6 col-lg-6 pt-4">
+	          <p>
+	          	<strong>Stay in the know</strong><br>
+	          	<span>We need a little blurb to go right here</span>
+	          </p>
+	      	</div>      
+	       	<div class="col-sm-12 col-md-6 col-lg-6 pt-4">	         	         	
+	          	<form class="news-letter" action="http://go.cheshireimpact.com/l/15322/2019-12-06/pd273n" method="post">
+	              	<input class="col-8" type="text" name="email_newsletter" placeholder="Email Newsletter" required="required"/>	              
+	          		<input class="col-4" type="submit" value="Subscribe"/>
+	          	</form>
+	      	</div>      
+	    </div>  
+	  </div>
+	</section> 
 	<section class="section-four-content">
 	  <div class="container pt-5">
 	    <div class="row">
@@ -37,12 +35,18 @@
 	      	    <li class="list-inline-item"><a href="https://www.linkedin.com/in/caseycheshire" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
 	      	    <li class="list-inline-item"><a href="https://www.youtube.com/user/caseychesh" target="_blank"><i class="fab fa-youtube"></i></a></li>
 	      	</ul>
-	      	<p class="copy-right">Copyright &copy; <span class="current-year"></span> Casey Cheshire. All Rights Reserved. | Privacy Policy</p>
+	      	<p class="copy-right">Copyright &copy; <span class="current-year"></span> Casey Cheshire. All Rights Reserved. | <a data-toggle="modal" data-target="#privacypolicy"href="#">Privacy Policy</a></p>
+	      	<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#basicExampleModal">
+  Launch demo modal
+</button> -->
 	      </div>
 	    </div>  
 	  </div>
 	</section>
 </footer>
+<!-- // privacy policy modal -->   
+{% include "inc/sections/privacy-policy.njk"%}
+<!-- // privacy policy modal -->  
   <!-- scripts -->    
   <script src="js/vendors/vendors.js"></script>   
   <script src="js/main.js"></script>  
@@ -59,7 +63,7 @@
 	  }
 	  if(window.attachEvent) { window.attachEvent('onload', async_load); }
 	  else { window.addEventListener('load', async_load, false); }
-	  })();
+	  })();	  	  
   </script>
   </body>
 </html>

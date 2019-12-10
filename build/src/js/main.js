@@ -57,5 +57,22 @@
       $(a).text( (new Date).getFullYear() );
     }
     currentYear(".current-year");// current year function
+
+    function scrollToAnchorExternal(){
+      jQuery(document).ready(function(){            
+      var target = window.location.hash;
+      // only try to scroll to offset if target has been set in location hash
+      if ( target != '' ){
+          var $target = jQuery(target); 
+          jQuery('html, body').stop().animate({
+          'scrollTop': $target.offset().top - 105}, // set offset value here i.e. 105
+          900, 
+          'swing',function () {
+          window.location.hash = target - 40 ;
+          });
+      }
+      });
+    }
+    scrollToAnchorExternal();
   });
 })();
