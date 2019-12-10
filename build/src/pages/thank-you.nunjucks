@@ -1,0 +1,8 @@
+{% set local = true %}
+{% set home = false %}
+{% set responsepage = true %}
+{% include "inc/globals/header.njk"%}	
+  	{% include "inc/sections/thank-you-page.njk"%}
+  	<!-- // work-with me -->  	  	
+  	<!-- // footer -->  	
+{% include "inc/globals/footer.njk"%}
