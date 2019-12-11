@@ -20,15 +20,15 @@ https://cheshireimpact-dev.github.io/casey-cheshire/thank-you.html
 1:color black to purple dark
 2:transitions .25
 
-3:borderbreaker hardline - white space
+
 6:offset internal page jump
-8:cta box - padding-bottom: 25px;
+
 
 4:input - outline 0
 5:subscribe - text-shadow: 1px 1px 0px 
 7:privacy - modal
 9:SUBMIT - ONLY 24PX
-
-
+8:cta box - padding-bottom: 25px;
+3:borderbreaker hardline - white space
 
 
