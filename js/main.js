@@ -74,7 +74,8 @@
             }
           });
         };
-        fadeHeader(); // fade outs header of offset trigger function
+        fadeHeader();
+
         function removeWaveEffect(a) {
           $(a).click(function() {
             $(this).removeClass('waves-effect waves-light');

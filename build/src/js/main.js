@@ -35,6 +35,7 @@
       });
     };
     smoothScroll();  // smoother scroll  function
+    
     function fadeHeader() {      
       $(window).scroll(function() {
         if ($(window).scrollTop() > 100) {
@@ -43,13 +44,14 @@
           $('#header').removeClass('clear-header');          
         }
       });
-    };
-    fadeHeader(); // fade outs header of offset trigger function
+    };  
+    fadeHeader();    
     function removeWaveEffect(a){
       $(a).click(function(){
           $(this).removeClass('waves-effect waves-light');
       });
     }
+
     removeWaveEffect('#navbar a'); // removes ripples effect function
 
     function currentYear(a){ // current year function

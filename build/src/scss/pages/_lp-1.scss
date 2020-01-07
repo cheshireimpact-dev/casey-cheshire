@@ -207,6 +207,16 @@
   .praiser {
     @include fontSetting($font-one, 400, 16px, 22px);
   }
+  .podcast-source-list{
+    a{
+      @include fontSetting($font-one, 400, 38px, 24px);            
+      margin:0 _rem(10px) 0 0;
+      font-size:_rem(36px);
+      &:hover{
+        color:#94d5f0;
+      }
+    }
+  }
 }
 
 
