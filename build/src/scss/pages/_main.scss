@@ -297,11 +297,15 @@ footer{
 		margin:_rem(10px) auto _rem(100px);
 	}
 
+h2{
+    @include fontSetting($font-one, 500, 22px, 22px);
 
+}
     .blurb{
         p{
-            font-size:_rem(12px);
-            line-height: _rem(18px);
+            
+                
+            
         }
     }
 }
